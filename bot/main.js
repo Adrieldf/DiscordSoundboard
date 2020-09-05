@@ -30,6 +30,6 @@ client.on('message', msg => {
 
 });
 
+var text = fs.readFileSync('discordToken.txt','utf8');
 
-
-client.login('NzUxOTE2MDcxODMyOTExODkz.X1QCaQ.BQtgyTaiJxCFuG7Gh1VftixDlfI');
+client.login(text);
