@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "444871168099",
+    "firebase_url": "https://discordsoundboardapp.firebaseio.com",
+    "project_id": "discordsoundboardapp",
+    "storage_bucket": "discordsoundboardapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:444871168099:android:e1bd881f744480aa216856",
+        "android_client_info": {
+          "package_name": "com.adrieldf.discordsoundboardapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "444871168099-2un7q3v4u63r69fhjtja9f3k4tfhff0q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcKI7cm7b3gpCHE1b_ZoQCYODAzNQvC38"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "444871168099-2un7q3v4u63r69fhjtja9f3k4tfhff0q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
