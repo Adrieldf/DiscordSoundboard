@@ -6,5 +6,5 @@ const router = express.Router();
 const index = require('../main');
 const baseRoute = require('./routes/baseRoute');
 app.use('/', index);
-app.use('/bases', baseRoute);
+app.use('/base', baseRoute);
 module.exports = app;

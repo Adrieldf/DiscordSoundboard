@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const fs = require('fs');
+const ytdl = require('ytdl-core');
 
 const client = new Discord.Client();
 const prefix = '-';
@@ -20,13 +21,13 @@ console.log("ready");
 
 client.on('message', msg => {
     if(!msg.content.startsWith(prefix) || msg.author.bot) return;
-
-    const args = msg.content.slice(prefix.length).split(/ +/);
+    const args = msg.content.substring(prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
 
-
     if(command === 'ping')
-    client.commands.get('ping').execute(msg, args);
+        client.commands.get('ping').execute(msg, args);
+    else if(command === 'play')
+        client.commands.get('play').execute(msg, args);
 
 });
 
