@@ -20,7 +20,6 @@ module.exports = {
             server.dispatcher = connection.play(ytdl(server.queue[0], { filter: "audioonly", quality: 'highestaudio'}));
             server.queue.shift();
 
-            message.channel.send('started play');
             server.dispatcher.on("end", function (){
                 if(server.queue[0])
                 {
@@ -43,8 +42,7 @@ module.exports = {
         server.queue.push(args[0]);
 
 
-        if(!message.member.voice.connection){
-            message.channel.send('outside play');
+        if(!message.member.voice.connection ){
             message.member.voice.channel.join().then(function (connection){
                 play(connection, message);
             });

@@ -28,6 +28,8 @@ client.on('message', msg => {
         client.commands.get('ping').execute(msg, args);
     else if(command === 'play')
         client.commands.get('play').execute(msg, args);
+        else if(command === 'skip')
+            client.commands.get('skip').execute(msg, args);
 
 });
 
